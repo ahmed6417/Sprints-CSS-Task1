@@ -13,6 +13,8 @@ nav {
     display: flex;
     justify-content: space-between;
     background: #3d464d;
+    position: fixed;
+    width: 100%;
 }
 
 div#main-cats-menu2 * a {
@@ -179,6 +181,23 @@ ul.mega-menu-2>li {
     }
 }
 
+@media screen and (max-width: 850px) {
+    a#main-cats-menu {
+        margin-left: 0% !important;
+        min-width: 10px !important;
+    }
+}
+
+@media screen and (max-width: 850px) {
+li {
+    margin-left: 10px !important;
+}
+}
+
+
+
+
+
 #m-menu {
     display: none;
 }
@@ -188,10 +207,7 @@ ul.mega-menu-2>li {
 }
 
 
-
-
-div#m-menu:hover> div#m-hide {
-    display: block;
+div#m-hide {
     position: fixed;
     background: #3d464d;
     top: 0;
@@ -202,6 +218,10 @@ div#m-menu:hover> div#m-hide {
     padding: 8px;
     transition: 0.8s ease;
     box-shadow: 4px -3px 9px 4px hsl(0deg 0% 0% / 14%);
+}
+
+#m-hide:target{
+    display: block;
 }
 
 div#m-hide>a {
