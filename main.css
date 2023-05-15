@@ -194,9 +194,14 @@ li {
 }
 }
 
+li.flex {
+    cursor: pointer;
+}
 
-
-
+a.nav-item.active {
+    color: #ffd334;
+    font-weight: 700;
+}
 
 #m-menu {
     display: none;
