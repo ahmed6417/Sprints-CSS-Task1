@@ -203,6 +203,10 @@ a.nav-item.active {
     font-weight: 700;
 }
 
+div#m-hide {
+    overflow: scroll;
+}
+
 #m-menu {
     display: none;
 }
